@@ -1,13 +1,7 @@
-import csv
-with open("EnglishWords.tsv") as file:
-       
-    # Passing the TSV file to 
-    # reader() function
-    # with tab delimiter
-    # This function will
-    # read data from file
-    tsv_file = csv.reader(file, delimiter="\t")
-     
-    # printing data line by line
-    for line in tsv_file:
-        print(line)
+import numpy
+
+speed = [99,86,87,88,111,86,103,87,94,78,77,85,86]
+
+x = numpy.mean(speed)
+
+print(x)
